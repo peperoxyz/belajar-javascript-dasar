@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undefined</title>
+  </head>
+  <body>
+    <script>
+      let kosong = 1;
+      if (kosong === undefined) {
+        console.log("UNDEFINED");
+      } else {
+        console.log("DEFINED");
+      }
+
+      // Berlaku juga pada Array: Ketika memanggil value yang belum ada -> undefined
+      const benda = ["Laptop", "Mouse", "Buku"];
+      if (benda[2] === undefined) {
+        console.log("ARRAY UNDEFINED");
+      } else {
+        console.log("ARRAY DEFINED");
+      }
+    </script>
+  </body>
+</html>
