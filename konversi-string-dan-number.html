@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi String dan Number</title>
+  </head>
+  <body>
+    <script>
+      // Terkadang, kita ingin mendapatkan data dari input user dengan tipe data string, tetapi ingin mengolahnya dengan tipe data number. Hal ini bisa dilakukan dengan bantuan konversi tipe data: dari string menjadi number.
+
+      // Cara:
+      // parseInt(string) = Mengonversi dari string ke number(bilangan bulat)
+      // parseFloat(string) = Mengonversi dari string ke number(bilangan pecahan)
+      // Number(string) = Mengonversi dari string ke number(bilangan bulat atau pecahan)
+      // number.toString() = Mengonversi dari number ke String.
+
+      const value1 = parseInt("1");
+      const value2 = 1;
+      const sum = value1 + value2;
+      document.writeln(`<p> ${sum} </p>`);
+
+      //   String to number
+      document.writeln(`<p>${parseInt("4.6")}</p>`); //4
+      document.writeln(`<p>${parseFloat("4.6")}</p>`); //4.6
+      document.writeln(`<p>${Number("4.6")}</p>`); //4.6
+
+      //   Number to string
+      const a = 1;
+      const b = 2;
+      const total = a.toString() + b; //"1" + 2
+      document.writeln(`<p>${total}</p>`); //12
+
+      //   Not a Number - NaN - ParseInt dan Float masih mentolerir seperti yang di line 37.
+      document.writeln(`<p>${parseInt("salah4.6")}</p>`); //NaN
+      document.writeln(`<p>${parseInt("100salah")}</p>`); //100
+      //    Not a Number - NaN - Number tidak mentolerir kesalahan apapun
+      document.writeln(`<p>${Number("4.6pastiNaN")}</p>`); //NaN
+      // NaN kalau dioperasikan dengan apapun hasilnya selalu NaN
+
+      //   isNaN() Function: fungsi untuk mengecek apakah sebuah number itu NaN atau bukan.
+      const first = "thisIsNan";
+      const second = 80;
+      document.writeln(`${isNaN(first)}`);
+      document.writeln(`${isNaN(second)}`);
+    </script>
+  </body>
+</html>

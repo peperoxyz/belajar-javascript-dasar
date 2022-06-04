@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array-Try</title>
+  </head>
+  <body>
+    <script>
+      // Array pada Js bersifat dinamis. Data bisa bertambah dengan sendirinya saat kita memasukkan data ke dalam Array. Tidak seperti Java/C yang punya batas maksimum yg dideklarasikan di awal.
+
+      // Membuat dan mengisi array
+      let series = [];
+      series.push("Modern Family", "Family Guy");
+      series.push("American Dad");
+
+      // Melihat value array di console
+      console.table(series); //dalam bentuk tabel
+      console.log(series); //dalam bentuk biasa:semua value
+      console.log(series[0]); //melihat value untuk index tertentu
+      console.log(series[1]); //melihat value untuk index tertentu
+      console.log(series[2]); //melihat value untuk index tertentu
+
+      // Mengubah value array
+      series[2] = "The Big Bang Theory"; //mengubah value di index ke-2 dari American Dad menjadi The BB Theory
+      console.table(series); //melihat hasil perubahan
+
+      // Menghapus index dan value tertentu pada array
+      delete series[1];
+      console.table(series);
+      // Kembali tambahkan yang 1
+      series[1] = "Family Guy";
+      console.table(series);
+
+      /* NOTES
+      1. Di dalam array, tidak ada batasan tipe data. Boleh beda2 atau sama semua.
+      2. Kita dapat memasukkan array ke dalam array.
+      */
+
+      // Array di dalam array
+      series.push(["American Dad", "Luckyli Invade", "Turn 17"]);
+      console.table(series);
+    </script>
+  </body>
+</html>

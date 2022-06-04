@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Template</title>
+  </head>
+  <body>
+    <script>
+      // String template: menggabungkan string tanpa menggunakan operasi tambah (+).
+      // Seperti membuat template untuk string.. uh.. yeah.
+      //   Menggunakan backtick (``) instead of tanda petik.
+
+      const name = "Dea Ananda Gunawan";
+      const firstName = "Dea";
+      const middleName = "Ananda";
+      const lastName = "Gunawan";
+      //   Cara menggabungkan variabel/substitusi:
+      const template1 = `Full Name: ${name}`;
+      console.log(template1);
+
+      //   Cara 2 menggabungkan variabel/substitusi:
+      const template2 = `Full Name: ${firstName} ${middleName} ${lastName}`;
+      console.log(template2);
+
+      //   Substitusi dengan expression (>< juga bisa loh?!)
+      const nama = "Lily Tucker-Pritchett";
+      const nilaiUjian = 98;
+      let udahMakan = true;
+
+      const templateLulus = `Nama: ${nama}, Lulus: ${nilaiUjian > 80}, Laper: ${udahMakan == false}`;
+
+      console.log(templateLulus);
+
+      //   Selain itu, string template support untuk multiline string: hanya dengan enter saja.
+      const multiline = `Nama Saya Dea.
+Saya sedang belajar Javascript dasar.
+Setelah Javascript dasar, saya berencana untuk mempelajari framework Js:
+Angular, React, dan Vue.`;
+
+      document.writeln("<pre>");
+      document.writeln(multiline);
+      document.writeln("</pre>");
+    </script>
+  </body>
+</html>

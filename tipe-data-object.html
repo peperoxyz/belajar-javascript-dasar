@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data Object</title>
+  </head>
+  <body>
+    <script>
+      // Pada PHP ada yang namana associative array: di mana array dapat memiliki index yang bisa dicustom(berupa string, tidak hanya number).
+
+      // Namun, di Js tidak mendukung associative array. Alternatifnya adalah TIPE DATA OBJECT yang bekerja persis seperti array assosiatif -> indexnya dapat berupa string. Index ini untuk array, kalau untuk TDO disebut PROPERTIES atau ATTRIBUTES.
+
+      // Membuat Tipe Data Object kosong {}
+      const orang = {}; // tipe data object kosong
+
+      // Memasukkan property dan value ke dalam TDO.
+      orang["nama"] = "Dea Ananda Gunawan";
+      orang["kebangsaan"] = "Indonesia";
+      orang["umur"] = 20;
+      console.table(orang);
+
+      //   Menghapus
+      delete orang["umur"];
+      console.table(orang);
+
+      //   Kembalikan
+      orang["umur"] = 20;
+      console.table(orang);
+
+      //   Membuat object dengan sekalian properti/atributnya
+      const mataKuliah = {
+        "nama matkul": "Basis Data", //tanda kutip digunakan jika properti lebih dari 1 kata
+        periode: "Semester 1 - 2",
+        pengajar: "Ibu Sartikha",
+      };
+      console.table(mataKuliah);
+
+      //   Mengakses properti untuk object
+      console.log(`Nama Matakuliah : ${mataKuliah["nama matkul"]}`);
+      console.log(`Periode : ${mataKuliah.periode}`);
+      console.log(`Pengajar : ${mataKuliah.pengajar}`);
+
+      //   Berlatih bikin object baru
+      const food = {
+        nama: "Rendang Sapi",
+        "negara asal": "Indonesia",
+        kalori: 468,
+      };
+
+      console.log(`Nama Makanan : ${food.nama}`);
+      console.log(`Negara Asal : ${food["negara asal"]}`);
+      console.log(`Kalori per Porsi : ${food.kalori} kal`)
+    </script>
+  </body>
+</html>

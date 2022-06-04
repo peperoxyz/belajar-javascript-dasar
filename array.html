@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+  <body>
+    <script>
+      // Array pada Js bersifat dinamis. Data bisa bertambah dengan sendirinya saat kita memasukkan data ke dalam Array. Tidak seperti Java/C yang punya batas maksimum yg dideklarasikan di awal.
+
+      // Membuat Array kosong
+      let arrayKosong = [];
+      // Membuat array tidak kosong
+      let arrayNama = ["Dea", "Ananda", "Gunawan"];
+      document.writeln(`<p>${arrayNama}</p>`);
+      //   Cara menambah dan menghapus data: Push n Pop
+      const pets = [];
+      pets.push("cat"); //data ke-0 diisi dengan "cat"
+      pets.push("dog", "rabbit"); //data ke-1 diisi dengan "dog" dan data ke-2 diisi dengan "rabbit"
+      pets.pop(); //menghapus value di index terakhir.
+
+      //   Melihat array di console
+      console.table(pets);
+      console.log(pets); //semua
+      console.info(pets[0]); //index tertentu
+
+      //   Operasi pada Array di Js
+      pets.push("birdie", "fish"); //menambahkan value
+      console.log(pets.length); //mendapatkan panjang array
+      console.log(pets[3]); // mendapatkan value array pada index ke-3
+      pets[3] = "kecoa"; // mengubah value index 3 dari fish menjadi kecoa
+      console.log(pets[3]);
+      delete pets[2]; //menghapus value pada index ke-2 tanpa menggeser index lainnya
+      console.log(pets);
+
+    </script>
+  </body>
+</html>

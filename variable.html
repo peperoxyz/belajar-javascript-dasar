@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variable</title>
+  </head>
+  <body>
+    <script>
+      // Js merupakan dinamic language, di mana variabelnya tidak perlu ditentukan tipe datanya apa. Bedakan string dengan number menggunakan tanda kutip(string: pakai, number: tidak pakai)
+
+      // Membuat variabel: deklarasi -> isi value
+      var fullName;
+      fullName = "Dea Bolo-bolo<br>";
+      document.writeln("Value awal fullName : " + fullName);
+      //   Mengubah value variabel: Timpa saja
+      var fullName = "Dea Ananda Gunawan";
+      document.writeln("Value akhir fullName: " + fullName);
+
+      //   Membuat variabel: secara langsung isi value tanpa deklarasi
+      var age = 20;
+      document.writeln("<br>");
+      document.writeln("Umur : " + age);
+
+      //   Panggil variabel dengan for
+      var i = 1;
+      document.writeln("<h4>Memanggil variabel dengan For Loop</h4>");
+      for (i = 0; i < 5; i++) {
+        document.writeln(fullName);
+        document.writeln("<br>");
+      }
+
+      //   Kata kunci baru untuk variabel(>2015) : LET dan CONST
+      
+    </script>
+  </body>
+</html>
