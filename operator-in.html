@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator In</title>
+  </head>
+  <body>
+    <script>
+      // Operator yang digunakan untuk mengecek apakah sebuah properti ada di dalam sebuah object || sebuah index ada di sebuah array.
+      // Bikin object dulu
+      const person = {
+        // firstName: "Dea",
+        middleName: undefined,
+        lastName: "Gunawan",
+      };
+      // Cek: jika terdapat properti firstName di object person, maka
+      if ("firstName" in person) {
+        alert(`Hello ${person.firstName}`);
+      } else {
+        alert("Hello saja");
+      }
+
+    //   Check in operator pada index array
+    const angka = [null, 10, null];
+    const check = 0 in angka;
+    alert(check); //true karena index ke 0 ada, walaupun null
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ternary Operator</title>
+  </head>
+  <body>
+    <script>
+      // Tanpa ternary operator - If Else biasa
+      const nilaiUjian = 20;
+      let ucapan;
+
+      if (nilaiUjian >= 80) {
+        ucapan = "Selamat, Kamu Lulus!";
+        document.writeln(ucapan);
+      } else {
+        ucapan = "Kamu tidak lulus.";
+        document.writeln(ucapan);
+      }
+
+      //   Dengan ternary operator!
+      const greeting = nilaiUjian >= 80 ? "Selamat, Kamu Lulus!" : "Silakan Coba Lagi";
+      document.writeln(`<p>Dengan ternary operator -> ${greeting}</p>`);
+
+      //   Coba lagi ternary operator
+      const sudahVaksin = false;
+      const masukMall = sudahVaksin == true ? "Silakan Masuk ke Dalam Mall!" : "Maaf, Anda Harus Vaksin Terlebih Dahulu.";
+      document.writeln(`<h2>${masukMall}</h2>`);
+
+      //   Coba lagi
+      const umur = 70;
+      reminder = umur >= 40 ? "Anda sudah tua" : "Masih muda lah..";
+      document.writeln(reminder);
+    </script>
+  </body>
+</html>
