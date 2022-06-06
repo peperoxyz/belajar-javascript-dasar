@@ -25,9 +25,14 @@
       document.writeln(`<p>Dengan ternary operator -> ${greeting}</p>`);
 
       //   Coba lagi ternary operator
-      const sudahVaksin = false;
-      const masukMall = sudahVaksin == true ? "Silakan Masuk ke Dalam Mall!" : "Maaf, Anda Harus Vaksin Terlebih Dahulu.";
+      const isVaccinated = true;
+      const masukMall = isVaccinated ? "Silakan Masuk ke Dalam Mall!" : "Maaf, Anda Harus Vaksin Terlebih Dahulu.";
       document.writeln(`<h2>${masukMall}</h2>`);
+
+      // coba lg
+      const vaccinated = "done";
+      const goingIn = vaccinated == "done" ? "Masuk" : "Vaksin dulu";
+      document.writeln(`<h2>${goingIn}</h2>`);
 
       //   Coba lagi
       const umur = 70;
